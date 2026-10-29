@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Pratham Patel Portfolio</title>
 <meta name="description" content="Pratham Patel — Software Developer and M.S. Data Science student at Texas A&M. Python data platforms, FastAPI, C#, TimescaleDB, AWS.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -202,6 +198,8 @@ h1{text-wrap:balance;max-width:12ch;font-family:var(--font-display);font-weight:
 .photo-frame::after{content:"";position:absolute;left:-40%;top:-40%;width:80%;height:180%;
   background:linear-gradient(100deg,transparent,rgba(200,220,170,.09),transparent);animation:sheen 5.5s ease-in-out infinite}
 @keyframes sheen{0%,100%{transform:translateX(-60%) rotate(12deg)}50%{transform:translateX(160%) rotate(12deg)}}
+.photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;z-index:1}
+.photo-frame::after{z-index:2}
 .photo-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--text-faint)}
 .photo-ph svg{width:74px;height:74px;opacity:.55}
 .photo-ph span{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase}
@@ -391,9 +389,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   html{scroll-behavior:auto}.reveal{opacity:1;transform:none}#preloader{display:none}.float-card{animation:none}
 }
 </style>
-</head>
-<body>
-
 
 <!-- PRELOADER -->
 <div id="preloader" aria-hidden="true">
@@ -522,10 +517,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
       <div class="hero-visual reveal in" data-d="2">
         <div class="photo-frame parallax" data-speed="0.05">
-          <div class="photo-ph">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-            <span>Professional photo</span>
-          </div>
+          <img class="photo-img" src="assets/pratham-photo.jpg" alt="Illustrated portrait of Pratham Patel in glasses and a dark blazer, with green trees behind him" width="765" height="1024">
         </div>
         <div class="float-card glass fc-1">
           <div class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
@@ -1057,5 +1049,4 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 })();
 </script>
 
-</body>
-</html>
+</body></html>
